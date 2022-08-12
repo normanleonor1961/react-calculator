@@ -35,4 +35,14 @@
   to {
     transform: rotate(360deg);
   }
+  
+}
+#calculator {
+  background-color: black;
+  width: 320px;
+}
+
+.button {
+  cursor: pointer;
+  line-height: 70px;
 }
