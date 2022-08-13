@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
@@ -87,7 +87,7 @@ function App() {
                     <div className="col-3">
                         <div className="button
                             fs-5 fw-bold text-bg-secondary text-center rounded-circle"
-                            onClick={() =>{
+                            onClick={() => {
                               secondNumber
                               ? setSecondNumber(secondNumber * -1)
                               : setFirstNumber(firstNumber * -1);
@@ -217,7 +217,7 @@ function App() {
                     <div className="col-3">
                         <div className="button
                             fs-5 fw-bold text-bg-dark text-center rounded-circle"
-                            onClick={() => { getOperation('-') }}>
+                            onClick={() => { getNumber('.') }}>
                             .
                         </div>
                     </div>
@@ -234,11 +234,7 @@ function App() {
             </div>
         </div>
 
-        <script src="script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-            crossorigin="anonymous">
-        </script>
+       
     </body>
   );
 }
